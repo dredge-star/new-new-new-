@@ -1,0 +1,82 @@
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-gray-50">
+      <div className="bg-gray-900 text-white py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl font-bold mb-4">JFK Assassination Research</h1>
+          <p className="text-xl">
+            Exploring the evidence, theories, and impact of the assassination of President John F. Kennedy
+          </p>
+        </div>
+      </div>
+
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold mb-4">Official Conclusions</h2>
+              <p className="mb-4">
+                Explore the findings of the Warren Commission and other official investigations into the assassination.
+              </p>
+              <Link href="/official-conclusions" className="text-blue-600 hover:underline">
+                View official conclusions →
+              </Link>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold mb-4">Conspiracy Theories</h2>
+              <p className="mb-4">
+                Examine the various alternative theories about who was responsible for Kennedy's assassination.
+              </p>
+              <Link href="/conspiracy-theories" className="text-blue-600 hover:underline">
+                Explore conspiracy theories →
+              </Link>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold mb-4">Key Figures</h2>
+              <p className="mb-4">
+                Learn about the important individuals connected to the assassination and its aftermath.
+              </p>
+              <Link href="/key-figures" className="text-blue-600 hover:underline">
+                View key figures →
+              </Link>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold mb-4">Timeline</h2>
+              <p className="mb-4">
+                Follow the chronology of events before, during, and after the assassination.
+              </p>
+              <Link href="/timeline" className="text-blue-600 hover:underline">
+                View timeline →
+              </Link>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold mb-4">Documents</h2>
+              <p className="mb-4">
+                Access primary sources, declassified documents, and other research materials.
+              </p>
+              <Link href="/documents" className="text-blue-600 hover:underline">
+                Browse documents →
+              </Link>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold mb-4">About This Project</h2>
+              <p className="mb-4">
+                Learn about the purpose and methodology behind this research project.
+              </p>
+              <Link href="/about" className="text-blue-600 hover:underline">
+                About the project →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
